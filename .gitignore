@@ -1,0 +1,6 @@
+node_modules/
+.vscode/
+src/playground/
+to-do.txt
+webpack.config.js
+public/bundle.js

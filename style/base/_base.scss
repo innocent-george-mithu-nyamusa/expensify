@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-family: Helvetica, sans-serif, Arial;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: $color-dark-blue;
+  font-size: $md-size;
+}
+.is-active {
+  font-weight: bold;
+}
