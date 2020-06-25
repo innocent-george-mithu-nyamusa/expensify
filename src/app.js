@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { Provider } from 'react-redux';
+import { Provider } from 'react-redux';
 
 //Own modules
 import configureStore from './store/configureStore';
@@ -8,7 +8,7 @@ import AppRouter from './routes/AppRouter';
 import { addExpense } from './actions/expenses';
 import { setTextFilter } from './selectors/expenses';
 //Styler Modules
-import 'Normalize-css/normalize.css';
+import 'normalize.css/normalize.css';
 import './../style/style.scss';
 
 const store = configureStore();
