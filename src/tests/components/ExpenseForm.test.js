@@ -1,5 +1,5 @@
 import React from 'react';
-import shallow from 'enzyme';
+import { shallow } from 'enzyme';
 import ExpenseForm from './../../components/ExpenseForm';
 import expenses from './../fixtures/expenses';
 
@@ -20,7 +20,7 @@ test('Should render Error for invalid Descsription Submission', () => {
   expect(wrapper).toMatchSnapshot();
   //Locate the element to check the submit event ,\
   //When the Event:('Submit Event')Object is fired ,
-  //We make a fake preventDefault property inoredr to allow the form to be sumitted;
+  //We make a fake preventDefault property inorder to allow the form to be sumitted;
   wrapper.find('form').simulate('submit', {
     preventDefault: () => {},
   });
