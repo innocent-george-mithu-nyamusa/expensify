@@ -1,7 +1,7 @@
 {
   "name": "expensify",
   "version": "1.0.0",
-  "description": "indecision app ",
+  "description": "expensify app ",
   "main": "app.js",
   "scripts": {
     "serve-live": "live-server public/",
@@ -11,7 +11,7 @@
     "test": "jest --config=jest.config.json"
   },
   "keywords": [
-    "indecision"
+    "expensify"
   ],
   "author": "Innocent Nyamusa",
   "license": "ISC",
