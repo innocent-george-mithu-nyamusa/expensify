@@ -2,7 +2,7 @@ import {
   addExpense,
   editExpense,
   removeExpense,
-} from './../../actions/expense';
+} from '../../actions/expense';
 
 test('Should setup a remove expense object', () => {
   const action = removeExpense({ id: '123456' });
@@ -38,7 +38,7 @@ test('should return add expense action object', () => {
   });
 });
 
-test('should return add expense action object', () => {
+test('should return add expense action object with default values', () => {
   const action = addExpense();
   expect(action).toEqual({
     type: 'ADD_EXPENSE',

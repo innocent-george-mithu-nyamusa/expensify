@@ -1,6 +1,6 @@
 import moment from 'moment';
-import selectExpenses from './../../selectors/expenses';
-import expenses from './../fixtures/expenses';
+import selectExpenses from '../../selectors/expenses';
+import expenses from '../fixtures/expenses';
 
 test('Should filter by text value', () => {
   const filters = {
@@ -12,6 +12,7 @@ test('Should filter by text value', () => {
   const action = selectExpenses(expenses, filters);
   expect(action).toEqual([expenses[7], expenses[6], expenses[5]]);
 });
+
 //Only include items whose date is in the future
 test('Should filter by Start Date', () => {
   const filters = {

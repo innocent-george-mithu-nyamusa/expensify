@@ -1,10 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import ExpenseListItem from './../../components/ExpenseListItem';
-import expenses from './../fixtures/expenses';
+import ExpenseListItem from '../../components/ExpenseListItem';
+import expenses from '../fixtures/expenses';
 
 test('Should render an Individual expense Item', () => {
-  const expense = expenses[1];
-  const wrapper = shallow(<ExpenseListItem {...expense} />);
+  const wrapper = shallow(<ExpenseListItem {...expenses[1]} />);
   expect(wrapper).toMatchSnapshot();
 });

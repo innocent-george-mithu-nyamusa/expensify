@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { EditExpensePage } from './../../components/EditExpensePage';
-import expenses from './../fixtures/expenses';
+import { EditExpensePage } from '../../components/EditExpensePage';
+import expenses from '../fixtures/expenses';
 
 let editExpense, removeExpense, history, wrapper;
 
@@ -14,6 +14,7 @@ beforeEach(() => {
       editExpense={editExpense}
       removeExpense={removeExpense}
       history={history}
+      expense={expenses[2]}
     />
   );
 });
@@ -23,10 +24,9 @@ test('Should render edit expense page', () => {
 });
 
 test('Should handle edit expense', () => {
-  const expense = wrapper.find('ExpenseForm').props('expenses');
-  wrapper.find('ExpenseForm').props('onSubmit')(expense);
-  expect(history).toHaveBeenCalledLastWith('/');
-  expect(wrapper).toHaveBeenCalledLastWith(expense.id, expense);
+  wrapper.find('ExpenseForm').prop('onSubmit')(expenses[2]);
+  expect(history.push).toHaveBeenLastCalledWith('/');
+  expect(editExpense).toHaveBeenLastCalledWith(expenses[2].id, expenses[2]);
 });
 
 test('Should handle remove expense', () => {

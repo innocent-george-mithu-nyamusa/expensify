@@ -5,7 +5,7 @@ import {
   sortByAmount,
   setStartDate,
   setEndDate,
-} from './../../actions/filters';
+} from '../../actions/filters';
 
 test('Should generate set start date action object', () => {
   const action = setStartDate(moment(0));
@@ -28,7 +28,7 @@ test('Should generate set Text action object', () => {
   const action = setTextFilter('This is important man');
   expect(action).toBe({
     type: 'SET_TEXT_FILTER',
-    text: ' This is important man',
+    text: 'This is important man',
   });
 });
 
