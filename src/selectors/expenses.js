@@ -1,5 +1,7 @@
 import moment from 'moment';
 
+// Get visible Expenses
+
 export default (expenses, { text, sortBy, startDate, endDate }) => {
   return expenses
     .filter((expense) => {
