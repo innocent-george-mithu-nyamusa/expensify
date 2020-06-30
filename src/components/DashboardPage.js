@@ -1,11 +1,11 @@
 import React from 'react';
-import ExpenseList from './expenseList';
+import ExpenseList from './ExpenseList';
+import ExpenseListFilters from './ExpenseListFilters';
 
-const expensifyDashboardPage = () => (
+const DashboardPage = () => (
   <div>
-    <h1>Welcome to Expensify home page </h1>
-    <h2>Home stuff goes here </h2>
+    <ExpenseListFilters />
     <ExpenseList />
   </div>
 );
-export default expensifyDashboardPage;
+export default DashboardPage;

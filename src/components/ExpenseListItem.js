@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
 
 const expenseListItem = ({ id, description, amount, createdAt }) => (
   <div>
