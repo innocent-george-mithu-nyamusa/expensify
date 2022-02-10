@@ -30,7 +30,7 @@
     "enzyme-to-json": "^3.5.0",
     "jest": "^26.1.0",
     "moment": "^2.27.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "normalize.css": "^8.0.1",
     "raf": "^3.4.1",
     "react": "^16.13.1",
